@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+   --soft-red: hsl(14, 88%, 65%);
+   --soft-violet: hsl(273, 75%, 66%);
+   --soft-blue: hsl(240, 73%, 65%);
+   --very-dark-grayish-blue: hsl(237, 12%, 33%);
+   --dark-grayish-blue: hsl(240, 6%, 50%);
+   --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+   background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+   color: var(--dark-grayish-blue);
+   font-family: "Kumbh Sans", sans-serif;
+   font-size: 0.8rem;
+   font-weight: 400;
+   line-height: 1.5;
+   text-align: center;
+}
+
+main {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+h1 {
+   color: var(--very-dark-desaturated-blue);
+   font-size: 2rem;
+   text-align: center;
+}
+
+.container {
+   background: url(../images/bg-pattern-mobile.svg) no-repeat 50% 0;
+   background-color: #fff;
+   border-radius: 20px;
+   height: 33.25rem;
+   width: 21.25rem;
+}
+
+.illu-img {
+   position: relative;
+   margin-bottom: -50px;
+   top: -110px;
+   width: 70%;
+}
+
+.faq-section {
+   text-align: left;
+   padding: 1.5rem 1.25rem 0;
+}
+
+.question {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
+   padding: 0.75rem 0;
+}
+
+.question:hover {
+   color: var(--soft-red);
+}
+
+.answer {
+   display: none;
+   padding-bottom: 0.75rem;
+   padding-right: 1rem;
+}
+
+/* ACTIVE */
+.active-q {
+   color: var(--very-dark-grayish-blue);
+   font-size: 0.85rem;
+   font-weight: 700;
+}
+
+.active-arrow {
+   transform: rotate(-180deg);
+}
+
+.active-answer {
+   display: block;
+}
+
+@media screen and (min-width: 1000px) {
+   h1 {
+      text-align: left;
+      margin: 2rem auto;
+   }
+   .container {
+      background: url(../images/bg-pattern-desktop.svg) no-repeat 1400% 60%;
+      background-color: #fff;
+      display: flex;
+      height: 520px;
+      width: 920px;
+   }
+
+   .img-section {
+      content: url(../images/illustration-woman-online-desktop.svg);
+      display: block;
+      width: 40%;
+      height: 60%;
+      position: relative;
+      top: 100px;
+      left: -50px;
+   }
+
+   .box-img {
+      content: url(../images/illustration-box-desktop.svg);
+      position: absolute;
+      width: 10%;
+      top: 370px;
+      left: 190px;
+      z-index: 99;
+   }
+
+   .faq-section {
+      width: 60%;
+      padding-right: 5rem;
+   }
+}
