@@ -101,6 +101,7 @@ h1 {
       background: url(../images/bg-pattern-desktop.svg) no-repeat 1400% 60%;
       background-color: #fff;
       display: flex;
+      overflow: hidden;
       height: 520px;
       width: 920px;
    }

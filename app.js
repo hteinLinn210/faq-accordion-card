@@ -1,9 +1,6 @@
 "use strict";
 
 let questionEl = document.querySelectorAll(".question");
-let arrowEl = document.querySelectorAll(".arrow-img");
-
-let arrow = Array.from(arrowEl);
 let question = Array.from(questionEl);
 
 question.forEach((q) => {
